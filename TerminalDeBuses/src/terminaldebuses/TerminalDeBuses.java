@@ -23,6 +23,7 @@ public class TerminalDeBuses extends Application {
         
         Scene scene = new Scene(root);
         System.out.println("BRIGIDOOOOOOOOOOOOOOOOOOOOOOOOOO");
+        System.out.println("BRIGIDOOOOOOOOOOOOOOOOOOOOOOOOOO");
         
         stage.setScene(scene);
         stage.show();
