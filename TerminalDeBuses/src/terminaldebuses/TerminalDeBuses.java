@@ -23,9 +23,14 @@ public class TerminalDeBuses extends Application {
         
         Scene scene = new Scene(root);
         System.out.println("BRIGIDOOOOOOOOOOOOOOOOOOOOOOOOOO");
+<<<<<<< HEAD
         System.out.println("BRIGIDOOOOOOOOOOOOOOOOOOOOOOOOOaaaaaaaaaO");
         System.out.println("BRIGIDOOOOOOOOOOOOOOOOOOOOOOOOOO");
         System.out.println("BRIGIDOOOOOOOOOOOOOOOOOOOOOOOOOO");
+=======
+        System.out.println("BRIGIDOOOOOOOOOOOOOOOOOOOOOOOOOO");
+        
+>>>>>>> gama
         stage.setScene(scene);
         stage.show();
     }
