@@ -37,6 +37,8 @@ public Jugador() {
 
     public void setBarcos(ArrayList<Barco> barcos) {
         this.barcos = barcos;
+
+        
     }
 
     public int getPortaaviones() {
