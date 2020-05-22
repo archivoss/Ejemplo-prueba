@@ -1,4 +1,10 @@
 # Ejemplo-prueba
 
 editando archivo...
-p
+p aksdasd
+añsldkasñldk
+pene
+brigidoooo
+asdas
+
+wena los k
