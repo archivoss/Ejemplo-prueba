@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Triangulo">
+  <ClassDiagramComponents>
+    <Class name="Triangulo" package="" visibility="public" xPosition="53.0" yPosition="21.0">
+      <Fields>
+        <Field name="puntos" type="ArrayList" visibility="private"/>
+        <Field name="cT" type="Color" visibility="private"/>
+        <Field name="lineas" type="Color" visibility="private"/>
+        <Field name="etiqueta" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="calcularPerimetro" returnType="void" visibility="public"/>
+        <Method name="calcularArea" returnType="void" visibility="public"/>
+        <Method name="calcularAltura" returnType="void" visibility="public"/>
+        <Method name="verTriangulo" returnType="void" visibility="public"/>
+        <Method name="getPuntos" returnType="ArrayList" visibility="public"/>
+        <Method name="setPuntos" returnType="void" visibility="public"/>
+        <Method name="setcT" returnType="void" visibility="public"/>
+        <Method name="getcT" returnType="Color" visibility="public"/>
+        <Method name="getLineas" returnType="Color" visibility="public"/>
+        <Method name="setLineas" returnType="void" visibility="public"/>
+        <Method name="setEtiqueta" returnType="String" visibility="public"/>
+        <Method name="getEtiqueta" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Punto" package="" visibility="public" xPosition="396.0" yPosition="21.0">
+      <Fields>
+        <Field name="x" type="int" visibility="private"/>
+        <Field name="y" type="int" visibility="private"/>
+        <Field name="colorP" type="Color" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getX" returnType="int" visibility="public"/>
+        <Method name="setX" returnType="void" visibility="public"/>
+        <Method name="getY" returnType="int" visibility="public"/>
+        <Method name="setY" returnType="void" visibility="public"/>
+        <Method name="getColorP" returnType="Color" visibility="public"/>
+        <Method name="setColorP" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Color" package="" visibility="public" xPosition="396.0" yPosition="363.0">
+      <Fields>
+        <Field name="R" type="int" visibility="private"/>
+        <Field name="G" type="int" visibility="private"/>
+        <Field name="B" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="setR" returnType="void" visibility="public"/>
+        <Method name="setG" returnType="void" visibility="public"/>
+        <Method name="setB" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation name="usa" source="Triangulo" target="Color" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="has" source="Triangulo" target="Punto" type="Composition" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <UseRelation name="usa" source="Punto" target="Color" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
