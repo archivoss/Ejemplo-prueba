@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Seia">
+  <ClassDiagramComponents>
+    <Class name="BackgroundController" package="seia" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="rec" type="Rectangle" visibility="package"/>
+        <Field name="archivoSeleccionado" type="File" visibility="package"/>
+        <Field name="seleccionarArchivo" type="JFileChooser" visibility="package"/>
+        <Field name="addFileButton" type="Button" visibility="private"/>
+        <Field name="anchorPane" type="AnchorPane" visibility="private"/>
+        <Field name="contenidoPDF" type="Label" visibility="private"/>
+        <Field name="drawButton" type="Button" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="addFileButtonAction" returnType="void" visibility="private">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+        <Method name="drawButtonAction" returnType="void" visibility="private">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+        <Method name="drawPressed" returnType="void" visibility="private">
+          <Argument type="MouseEvent" name="event"/>
+        </Method>
+        <Method name="drawDragged" returnType="void" visibility="private">
+          <Argument type="MouseEvent" name="event"/>
+        </Method>
+        <Method name="enter" returnType="void" visibility="private">
+          <Argument type="MouseEvent" name="event"/>
+        </Method>
+        <Method name="release" returnType="void" visibility="private">
+          <Argument type="MouseEvent" name="event"/>
+        </Method>
+        <Method name="exit" returnType="void" visibility="private">
+          <Argument type="MouseEvent" name="event"/>
+        </Method>
+        <Method name="press" returnType="void" visibility="private">
+          <Argument type="MouseEvent" name="event"/>
+        </Method>
+        <Method name="initialize" returnType="void" visibility="public">
+          <Argument type="URL" name="url"/>
+          <Argument type="ResourceBundle" name="rb"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="LeerPdf" package="seia" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="parser" type="PDFParser" visibility="package"/>
+        <Field name="parsedText" type="String" visibility="package"/>
+        <Field name="pdfStripper" type="PDFTextStripper" visibility="package"/>
+        <Field name="pdDoc" type="PDDocument" visibility="package"/>
+        <Field name="cosDoc" type="COSDocument" visibility="package"/>
+        <Field name="pdDocInfo" type="PDDocumentInformation" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="pdftoText" returnType="String" visibility="public">
+          <Argument type="File" name="f"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Seia" package="seia" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="start" returnType="void" visibility="public">
+          <Argument type="Stage" name="stage"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

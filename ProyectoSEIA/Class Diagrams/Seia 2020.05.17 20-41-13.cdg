@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Seia">
+  <ClassDiagramComponents>
+    <Class name="BackgroundController" package="seia" visibility="public" xPosition="259.0" yPosition="46.0">
+      <Fields>
+        <Field name="rec" type="Rectangle" visibility="package"/>
+        <Field name="archivoSeleccionado" type="File" visibility="package"/>
+        <Field name="seleccionarArchivo" type="JFileChooser" visibility="package"/>
+        <Field name="addFileButton" type="Button" visibility="private"/>
+        <Field name="anchorPane" type="AnchorPane" visibility="private"/>
+        <Field name="contenidoPDF" type="Label" visibility="private"/>
+        <Field name="drawButton" type="Button" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="LeerPdf" package="seia" visibility="public" xPosition="281.0" yPosition="310.0">
+      <Fields>
+        <Field name="parser" type="PDFParser" visibility="package"/>
+        <Field name="parsedText" type="String" visibility="package"/>
+        <Field name="pdfStripper" type="PDFTextStripper" visibility="package"/>
+        <Field name="pdDoc" type="PDDocument" visibility="package"/>
+        <Field name="cosDoc" type="COSDocument" visibility="package"/>
+        <Field name="pdDocInfo" type="PDDocumentInformation" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="pdftoText" returnType="File" visibility="public">
+          <Argument type="File" name="f"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Seia" package="seia" visibility="public" xPosition="645.0" yPosition="94.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="start" returnType="Stage" visibility="public">
+          <Argument type="Stage" name="stage"/>
+        </Method>
+        <Method name="main" returnType="String[]" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Background.fmxl" package="" visibility="public" xPosition="68.0" yPosition="113.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation name="" source="seia.BackgroundController" target="seia.LeerPdf" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="seia.Seia" target="seia.BackgroundController" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
