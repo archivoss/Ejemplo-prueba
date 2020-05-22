@@ -39,6 +39,7 @@ public class TerminalDeBuses extends Application {
         System.out.println("BRIGIDOOOOOOOOOOOOOOOOOOOOOOOOOO");
         System.out.println("BRIGIDOOOOOOOOOOOOOOOOOOOOOOOOOO");
         System.out.println("BRIGIDOOOOOOOOOOOOOOOOOOOOOOOOOO");
+        System.out.println("BRIGIDOOOOOOOOOOOOOOOOOOOOOOOOOO");
         
         
 >>>>>>> gama
