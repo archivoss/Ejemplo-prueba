@@ -25,6 +25,7 @@ public class TerminalDeBuses extends Application {
         System.out.println("BRIGIDOOOOOOOOOOOOOOOOOOOOOOOOOO");
         System.out.println("BRIGIDOOOOOOOOOOOOOOOOOOOOOOOOOaaaaaaaaaO");
         System.out.println("BRIGIDOOOOOOOOOOOOOOOOOOOOOOOOOO");
+        System.out.println("BRIGIDOOOOOOOOOOOOOOOOOOOOOOOOOO");
         stage.setScene(scene);
         stage.show();
     }
