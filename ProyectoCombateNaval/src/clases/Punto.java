@@ -12,10 +12,11 @@ package clases;
 public class Punto {
     private int y, x;
     public Punto(){
-        
+     //birigidooooo   
     }
 
     public int getY() {
+        
         return y;
     }
 
